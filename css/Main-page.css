@@ -1,0 +1,118 @@
+.page{
+    background:center/cover no-repeat  url("../img/Загальна%20директорія/Фон%20для%20основної%20сторінки.png");
+    display: flex;
+    }
+.pad{
+    padding: 30px;
+}
+.blur{
+    display: flex;
+    background-color: rgba(17, 16, 17, 0.56);
+    padding: 0 250px;
+}
+@media screen and (max-width: 900px){
+    .blur{
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .blur{
+        padding: 0 50px;
+    }
+}
+.btn-blur{
+    box-shadow: 0px 0px 25px -5px #525252;
+}
+
+.Text-content
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.button-open
+{   
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: white 3px solid;
+    border-radius: 20%;
+    align-items: center;
+}
+.button-a{
+    display: flex;
+    align-items: center;
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    }
+
+
+
+
+  .button-open:link,
+.button-open:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px; /* Ваш розмір кнопки */
+    display: flex;
+    border: 3px solid white;
+    border-radius: 30px; /* Збережено вашу форму */
+    transition: all 0.2s ease; /* Додано плавний перехід */
+    position: relative; /* Потрібно для псевдоелемента */
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-open:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-open:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-open::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px; /* Відповідає вашій кнопці */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: rgba(255, 255, 255, 0.3); /* Ефект при наведенні */
+}
+
+.button-open:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.button-open-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
