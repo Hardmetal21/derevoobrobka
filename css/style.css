@@ -1,8 +1,19 @@
-root{
+:root{
     --text-color-standart:#363636f5;
+    --bg-color:#D1D646;
+    --navbg-color:#f97068;
+    --artbg-color:#f8f8f8;
+    --nav-hover-color:orange;
+    --nav-txthover-color:#000;
+    --zmist-hover:blue;
+    --oglava-color:#571325;
+    --titylka-txt-color:black ;
+    --titylka-brd-color: orange;
+    --header-bg-color:rgba(79, 93, 117, 0.85);
+    --border-img-cl:#f7dc0e;
 }
 body{
-    background:#D1D646;
+    background:var(--bg-color);
 }
 
 .main-content {
@@ -18,7 +29,7 @@ body{
 {
 display: flex;
 position: relative;
-background-color: #f97068;
+background-color: var(--navbg-color);
 height: 40px;
 width: -webkit-fill-avaible;
 justify-content: center;
@@ -33,7 +44,7 @@ article{
     padding:20px 0 50px 0;
     width: 60%;
     min-height:500px;
-    background: #f8f8f8;
+    background: var(--artbg-color);
     border-radius: 0 0 30px 30px;
 }
 
@@ -104,7 +115,7 @@ article{
 }
 
 .navigation ul li a:hover {
-    color: orange;
+    color: var(--nav-hover-color);
 }
 
 .triger{
@@ -137,7 +148,7 @@ article{
     bottom: -2px; 
     width: 0;
     height: 3px; 
-    background-color: orange;
+    background-color: var(--nav-hover-color);
     transform: translateX(-50%) scaleX(0);
     transform-origin: center; 
     transition: transform 0.5s ease, width 0.5s ease; 
@@ -149,7 +160,7 @@ article{
 }
 
 .Li-zmist a:hover {
-    color: blue; 
+    color: var(--zmist-hover); 
 }
 
 
@@ -183,7 +194,7 @@ article ol li{
 }
 article .oglava{
     font-family: Calibri;
-    color: #571325;
+    color: var(--oglava-color);
     font-size: 28px;
     padding-left: 8px;
     text-align: center;
@@ -222,7 +233,7 @@ article a, .Li-zmist{
 }
 
 .navigation a:hover {
-    color: #000; /* Зміна кольору тексту */
+    color: var(--nav-txthover-color); /* Зміна кольору тексту */
 }
 
 .navigation a::after {
@@ -234,7 +245,7 @@ article a, .Li-zmist{
     transform-origin: center; /* Точка початку анімації - центр */
     width: 100%; /* Лінія завжди дорівнює ширині тексту */
     height: 3px; /* Висота підкреслення */
-    background-color: orange; /* Колір лінії */
+    background-color: var(--nav-hover-color); /* Колір лінії */
     transition: transform 0.3s ease; /* Анімація розширення */
 }
 
@@ -251,8 +262,8 @@ article a, .Li-zmist{
 .titylka a {
     width: max-content;
     background: none;
-    border: 3px solid orange;
-    color: black;
+    border: 3px solid var(--titylka-brd-color);
+    color: var(--titylka-txt-color);
     font: inherit;
     text-transform: uppercase;
     text-decoration: none;
@@ -294,22 +305,22 @@ header{
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 200px;
+    height: 250px;
 }
 .head1{
     display: flex;
     flex-direction: row;
-    height: 200px;
-    background:center/cover no-repeat  url("../img/Загальна\ директорія/backgroun-for-header.jpg");
+    height: 250px;
+    background:center 80% / cover no-repeat  url("../img/Загальна\ директорія/backgroun-for-header.jpg");
 }
 
 .head2{
     display: flex;
     width: -webkit-fill-available;
-    height: 200px;
+    height: 250px;
     justify-content: center;
     align-items: center;
-    background: rgba(79, 93, 117, 0.85);
+    background: var(--header-bg-color);
 }
 .headText {
     font-family: Calibri;
@@ -337,7 +348,7 @@ header{
     cursor: pointer;
         width: auto;
     height: auto;
-    border: 2px solid #f7dc0e;
+    border: 2px solid var(--border-img-cl);
     filter: drop-shadow(1px 2px 4px #3F0F1B);
     max-width: 76%;
 }

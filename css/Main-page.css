@@ -1,5 +1,5 @@
 .page{
-    background:center/cover no-repeat  url("../img/Загальна%20директорія/Фон%20для%20основної%20сторінки.png");
+    background:center /cover no-repeat  url("../img/Загальна%20директорія/Фон%20для%20основної%20сторінки.png");
     display: flex;
     }
 .pad{
