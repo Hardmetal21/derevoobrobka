@@ -1,18 +1,19 @@
 :root{
-    --text-color-standart:#363636f5;
-    --bg-color:#D1D646;
-    --navbg-color:#f97068;
-    --artbg-color:#f8f8f8;
-    --nav-hover-color:orange;
-    --nav-txthover-color:#000;
-    --zmist-hover:blue;
-    --oglava-color:#571325;
-    --titylka-txt-color:black ;
-    --titylka-brd-color: orange;
-    --header-bg-color:rgba(79, 93, 117, 0.85);
-    --border-img-cl:#f7dc0e;
-    --Button-titylka-color:rgba(212, 120, 7, 0.7);
-    --mobile-border-bottom:#f7dc0e;
+    --text-color-standart:#333333;
+    --bg-color:#ffe0af;
+    --navbg-color:#4B6B47;
+    --artbg-color:#FAF9F6;
+    --nav-hover-color:#A8B99C;
+    --nav-txthover-color:#1a2619;
+    --zmist-hover:#A47551;
+    --oglava-color:#5B3A29;
+    --titylka-txt-color:#333333 ;
+    --titylka-brd-color: #B35C1E;
+    --header-bg-color:#8b5e3ca9;
+    --header-text:#ffffff;
+    --border-img-cl:#DCC6B0;
+    --Button-titylka-color:rgba(165, 91, 42, 0.8);
+    --mobile-border-bottom:#DCC6B0;
     --drop-image-filter:#3F0F1B;
 }
 body{
@@ -182,7 +183,9 @@ article ol {
     margin-top: 0;
     padding: 0 50px 0 100px;
 }
-
+article ul {
+    list-style-type: disc;
+}
 article ol li{
     font-family: Calibri;
     color: var(--text-color-standart);
@@ -329,7 +332,7 @@ header{
 }
 .headText {
     font-family: Calibri;
-    color: #ffffff;
+    color: var(--header-text);
     font-size: 86px;
     padding-left: 8px;
     text-align: center;

@@ -69,12 +69,12 @@ $(document).ready(function () {
         recalculateSize();
         $(".rotate_left").click(function (e) {
             e.stopPropagation();
-            currentRotation = (currentRotation - 90) % 360;
+            currentRotation = (currentRotation - 90);
             recalculateSize();
         });
         $(".rotate_right").click(function (e) {
             e.stopPropagation();
-            currentRotation = (currentRotation + 90) % 360;
+            currentRotation = (currentRotation + 90);
             recalculateSize();
         });
         $(".popup_bg").click(function () {
